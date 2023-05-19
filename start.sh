@@ -61,8 +61,8 @@ case $GPU_SELECT in
 esac
 echo "=====| Install microcoe (Only GRUB!) |====="
 echo "Your CPU: 1) INTEL 2) AMD"
-read GPU_SELECT
-case $GPU_SELECT in
+read CPU_SELECT
+case $CPU_SELECT in
     1)
         echo "Install microcode for INTEL..."
         pacman -S intel-ucode
